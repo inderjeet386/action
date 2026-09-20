@@ -34,9 +34,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Download dragon.txt artifact
-      uses: actions/download-artifact@4
+      uses: actions/download-artifact@v4
       with:
-        name: dragon.txt
+        name: dragon-file
     - name : Read File
       run: cat dragon.txt
     - name: Deploy
